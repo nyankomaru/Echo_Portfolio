@@ -100,23 +100,6 @@ Echoは、プレイヤー自身の攻撃に加えて、コウモリ、手、犬�
 
 ---
 
-## Source構成
-
-```text
-Source
-├─ 01_Hand_Spawn
-│  ├─ SpawnAbility.cpp
-│  ├─ SpawnAbility.h
-│  ├─ HandSpawnAbility.cpp
-│  └─ HandSpawnAbility.h
-│
-└─ 02_Hand_GrabThrow
-   ├─ Hand.cpp
-   └─ Hand.h
-```
-
----
-
 ## 担当ファイル
 
 ### Hand Spawn
@@ -232,12 +215,8 @@ Echoではその経験を活かし、プレイヤー自身の攻撃ではなく�
 
 ## 注意事項
 
-- 本作品はTGS展示を目指して制作していた試作実装です。
-- 期間内にゲームとして完成させる見込みが立たなかったため、企画を停止しました。
 - 掲載しているSourceは、自分が担当した範囲を確認するための抜粋です。
 - プロジェクト全体を再ビルドするための完全なSource一式ではありません。
-- 実行データ上で確認できる `BP_Hand` / `AHand` の挙動に絞って掲載しています。
-- 実行データ上で確認できない `HandTurret` は掲載していません。
 - コウモリ、犬、敵AI、ゲーム全体の基盤処理は他メンバー担当または掲載対象外です。
 - UE側でのMontage再生や位置調整は行っていますが、C++側ではGrabThrowのロジックを中心に掲載しています。
 
@@ -245,6 +224,4 @@ Echoではその経験を活かし、プレイヤー自身の攻撃ではなく�
 
 ## リンク
 
-- デモ動画：準備中
-- 実行データ：[GitHub Releases](../../releases/latest)
-- ポートフォリオ：準備中
+- 実行データ：https://github.com/nyankomaru/Echo_Portfolio/releases/tag/v1.0.0
